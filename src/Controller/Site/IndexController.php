@@ -8,8 +8,8 @@ class IndexController extends AbstractActionController
 {
     public function indexAction()
     {
-        $resource = $this->params()->fromQuery('resource');
         $id = $this->params()->fromQuery('id');
+        $resource = $this->params()->fromQuery('resource');
         $property = $this->params()->fromQuery('property');
 
         $response = $this->getResponse();
