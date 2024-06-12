@@ -2,7 +2,6 @@
 namespace IdResolver\Controller\Site;
 
 use Laminas\Mvc\Controller\AbstractActionController;
-use Laminas\View\Model\ViewModel;
 
 class IndexController extends AbstractActionController
 {
@@ -47,7 +46,7 @@ class IndexController extends AbstractActionController
                     'type' => 'eq',
                     'property' => $property,
                     'text' => $id,
-                ]
+                ],
             ],
         ];
         $resources = $this->api()->search($resourceName, $searchQuery)->getContent();
